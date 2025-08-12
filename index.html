@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="overlay overlayactive" onclick="closeModal()"></div>
+
+    <div class="wrapper">
+        <!--CIRCLES-->
+        <div class="red"></div>
+        <div class="blue"></div>
+
+        <div class="container">
+            <!--IMAGE-->
+    
+            <img src="-qc6r2p.jpg" alt=":)">
+            <h1>Sushant Suryavanshi</h1>
+            <h3>Front-end Developer</h3>
+            <div class="div-btn">
+                    <button class="button-1" onclick= "openModal()"><span><i class="fa-solid fa-share "></i></span>Share my Profile</button>
+                
+                    <button >Follow Me</button>
+            </div>
+        </div>
+
+        <div class="modal active">
+
+             <div class="share">
+                <h1>Share My Profile</h1>
+                <div >
+                
+                        <i onclick="closeModal()" class="fa-solid fa-xmark fa-2x cross"></i>
+
+                </div>
+             </div>
+             <h3>Share this via</h3>
+             <div class="apps">
+                <div id="linkedin">
+                    <a href="https://www.linkedin.com/in/sushant-suryavanshi-08ab32246/">
+                        <i class="fa-brands fa-linkedin fa-2x" style="color: #0c5b97;"></i>
+                    </a>
+                </div>
+                <div id="twitter">
+                    <a href="https://twitter.com/su_shant_14/likes">
+                        <i class="fa-brands fa-x-twitter fa-2x" style="color: #0e52c8;"></i>
+                    </a>
+                </div>
+                <div id="insta">
+                    <a href="https://www.instagram.com/su_shant_014/?hl=en">
+                        <i class="fa-brands fa-instagram fa-2x" style="color: #fe1686;"></i>
+                    </a>
+                </div>
+                <div id="whatsapp">
+                    <a href="https://wa.me/qr/RR3FG2S3TAXPA1">
+                        <i class="fa-brands fa-whatsapp fa-2x" style="color: #6dee9a;"></i>
+                    </a>
+                </div>
+                <div id="git">
+                    <a href="https://github.com/sushant-014">
+                        <i class="fa-brands fa-github fa-2x" style="color: #a8a8a8;"></i>
+                    </a>
+                </div>
+             </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/c5306b8100.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

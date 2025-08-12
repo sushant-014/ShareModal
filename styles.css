@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.red{
+    position: absolute;
+    top: 1.5em;
+    left: 25em;
+    background:linear-gradient(-25deg, #d84869, #f46641);
+    border-radius: 50%;
+    width: 13em;
+    height: 13em;
+    box-shadow: 0 0 50px #d84869;
+    animation: circle1 15s infinite;
+}
+@keyframes circle1 {
+      
+     50%{top: 2em; left: 27em; width: 14em; height: 14em}   
+}
+.blue{
+    position: absolute;
+    bottom: 2em;
+    right: 25em;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    border-radius: 50%;
+    width: 19em;
+    height: 19em;
+    box-shadow: 0 0 50px #5648d8;
+    animation: circle2 15s infinite;
+}
+@keyframes circle2 {
+      
+     50%{bottom: 3em; right: 27em; width: 20em; height: 20em}   
+}
+
+.container{
+    z-index: 1;
+    padding: 20px 5px;
+    height: 450px;
+    width: 380px;
+    background: #ffffff1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba(245, 245, 245, 0.673);
+    backdrop-filter: blur(15px);
+    color: white;
+    opacity: 1.5;
+}
+
+img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.div-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-btn button{
+    border-radius: 5px;
+    background: rgba(44, 43, 43, 0.187);
+    padding: 10px;
+    border: 2px solid rgba(245, 245, 245, 0.673);
+    color: whitesmoke;
+    align-items: center;
+    width: 11em;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 1000ms;
+}
+.button-1{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: whitesmoke;
+    background: black;
+    opacity: 0;
+    width: 35vw;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    padding: 30px 15px;
+}
+
+.active{
+    opacity: 1;
+}
+
+.share{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    font-size: x-larger;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.apps{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px ;
+    padding-top: 20px ;
+    
+}
+
+#linkedin{
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    border: 1px solid #0c5b97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#twitter{
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    border: 1px solid #0e52c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#insta{
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    border: 1px solid #fe1686;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#whatsapp{
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    border: 1px solid #6dee9a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#git{
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 50%;
+    border: 1px solid #a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.overlay {
+    position: fixed;
+    background-color: #5f5f5f83;
+    top: 0;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+  }
+
+  .overlayActive {
+    opacity: 11;
+    pointer-events: initial;
+  }
